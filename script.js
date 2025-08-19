@@ -279,24 +279,6 @@ document.addEventListener("contextmenu", function(e){
       e.preventDefault();
     });
 
-    // Disable common inspect keys
- document.addEventListener("keydown", function(e) {
-      // F12
-      if (e.key === "F12") {
-        e.preventDefault();
-      }
-      // Ctrl+Shift+I (Inspect)
-      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
-        e.preventDefault();
-      }
-      // Ctrl+Shift+J (Console)
-      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
-        e.preventDefault();
-      }
-      // Ctrl+U (View Source)
-      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
-        e.preventDefault();
-      }
- });
+
 
 
